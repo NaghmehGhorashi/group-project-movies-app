@@ -1,15 +1,15 @@
-
-import { Routes, Route } from 'react-router-dom';
-import { MoviesProvider } from './context/MoviesContext';
-import Home from './pages/home/home';
-import Movies from './pages/all movie/movies';
-import Movie from './pages/movie/movie';
-import Add from './pages/add/add';
-import Aboutus from './pages/about us/aboutus';
+import { Routes, Route } from "react-router-dom";
+import { MoviesProvider } from "./context/MoviesContext";
+import Home from "./pages/home/home";
+import Movies from "./pages/all movie/movies";
+import Movie from "./pages/movie/movie";
+import Add from "./pages/add/add";
+import Aboutus from "./pages/about us/aboutus";
 
 function App() {
   return (
-    <MoviesProvider> {/* Wrap the routes with the MoviesProvider */}
+    <MoviesProvider>
+      {/* Wrap the routes with the MoviesProvider */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
-
