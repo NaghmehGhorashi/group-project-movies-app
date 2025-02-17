@@ -3,7 +3,7 @@ import Wrapper from "../../components/container/container"
 import style from "./home.module.css"
 import { Link } from 'react-router-dom'
 
-
+// this filename should be Home.jsx
 
 function Home() {
     return (
