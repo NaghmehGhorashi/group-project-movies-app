@@ -10,8 +10,11 @@ export const MoviesProvider = ({ children }) => {
 	useEffect(() => {
 		axios
 			.get("https://aryafuture.ir/movies")
+			// .get("http://localhost:6603/movies")
 			.then((result) => {
+				// console.log(result.data.data.movies);
 				console.log(result.data);
+				// setMovies(result.data.data.movies);
 				setMovies(result.data);
 				setLoading(false);
 			})
